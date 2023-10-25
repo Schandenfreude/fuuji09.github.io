@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+
+    <link rel="icon" href="/Icons/shinrinyoku-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/Register/CSS/general.css">
+    <link rel="stylesheet" href="/Register/CSS/form.css">
+  </head>
+
+  <body>
+    <main>
+      <form class="form-box">
+        <div class="register-header">
+          <h2>Join Shinrinyoku</h2>
+        </div>
+
+        <div class="input-div">
+          <div class="input-block">
+            <label>First Name</label>
+            <input type="text" placeholder="First Name" required>
+          </div>
+
+          <div class="input-block">
+            <label>Last Name</label>
+            <input type="text" placeholder="Last Name" required>
+          </div>
+
+          <div class="input-block">
+            <label>Middle Name</label>
+            <input type="text" placeholder="Optional">
+          </div>
+        </div>
+
+        <div class="input-div-info">
+          <div>
+            <label>Username</label>
+          </div>
+          <input class="input-bar" type="text" placeholder="Username" required>
+        </div>
+
+        <div class="input-div-info">
+          <div>
+            <label>Email</label>
+          </div>
+          <input class="input-bar" type="email" name="email"  placeholder="youremail@gmail.com" required>
+        </div>
+
+        <div class="input-div-info">
+          <div>
+            <label>Re-enter Email</label>
+          </div>
+          <input class="input-bar" type="email" name="email" placeholder="youremail@gmail.com" required>
+        </div>
+
+        <div class="input-div-info">
+          <div>
+            <label>Password</label>
+          </div>
+          <div class="show-hide-div">
+            <input id="password" class="input-bar" type="password" placeholder="Password" required name="password">
+            <img src="/Icons/view (1).png" id="showPass" class="show-hide" onclick="togglePass()">
+          </div>
+        </div>
+
+        <div class="input-div-info">
+          <div>
+            <label>Re-enter Password</label>
+          </div>
+          <div class="show-hide-div">
+            <input id="repassword" class="input-bar" type="password" placeholder="Password" required name="password">
+            <img src="/Icons/view (2).png" id="reshowPass" class="show-hide" onclick="retogglePass()">
+          </div>
+        </div>
+
+        <div>
+          <label>Birthday</label>
+          <div class="birthday-selection">
+            <select required>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+            </select>
+
+            <select id="daySelect" required>
+
+            </select>
+
+            <select id="yearSelect" required>
+
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>Gender</label>
+          <div class="gender-selection">
+            <div class="gender-box">
+              <label>Male</label>
+              <input type="radio" name="gender" required>
+            </div>
+            <div class="gender-box">
+              <label>Female</label>
+              <input type="radio" name="gender" required>
+            </div>
+            <div class="gender-box">
+              <label>Custom</label>
+              <input type="radio" name="gender" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="terms-condition">
+          <div>
+            <input type="checkbox" required>
+          </div>
+          <div>
+            <p>
+              By clicking Register, you agree to our Terms, Privacy Policy and Cookies Policy.
+            </p>
+          </div>
+        </div>
+
+        <div class="register">
+          <button>
+            <a href="/Websites/Login.html">Register</a>
+          </button>
+        </div>
+
+        <div class="login-alt">
+          <p>Already have an Account? <a href="/Websites/Login.html">Sign up</a></p>
+        </div>
+
+      </form>
+    </main>
+
+    <script src="/Register/JS/yearSelect.js"></script>
+    <script src="/Register/JS/daySelect.js"></script>
+    <script src="/Login js/show password.js"></script> 
+    <script src="/Register/JS/showPass.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+
+    <link rel="icon" href="/Icons/shinrinyoku-icon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/Login Style/general.css">
+    <link rel="stylesheet" href="/Login Style/form.css">
+  </head>
+
+  <body>
+    <main>
+      <form class="form-box">
+        <div class="header-div">
+          <h2>Login to Shinrinyoku</h2>
+        </div>
+        <div class="input-div">
+          <div>
+            <label for="Email">Email</label>
+          </div>
+          <div>
+            <input id="username" class="text-input" type="email" required placeholder="Email">
+          </div>
+        </div>
+  
+        <div class="input-div">
+          <div>
+            <label for="Password">Password</label>
+          </div>
+          <div class="show-hide-div">
+            <input id="password" class="text-input" type="password" name="password" placeholder="Password" maxlength="70" required >
+            <img id="showPass" class="show-hide" src="/Icons/view (1).png" onclick="togglePass()">
+          </div>
+        </div>
+        <div class="remember-forgot">
+          <div class="remember">
+            <input class="checkbox" type="checkbox" name="remember">
+            <p>Keep Me Logged in</p>
+          </div>
+          <div class="forgot-div">
+            <a class="forgot" href="">Forgot username/password?</a>
+          </div>
+        </div>
+        <button class="login">
+          <a class="login-anchor" href="/Websites/Item page.html" onclick="validateForm() ">Login</a>
+        </button>
+
+        <div class="or-line">
+          <hr class="line">
+          <p class="or">or</p>
+          <hr class="line">
+        </div>
+
+        <div class="register-div">
+          <button id="registerButton">Create an Account</button>
+        </div>
+      </form>
+    </main>
+    <script src="/Login js/register-redirect-page.js"></script>
+    <script src="/Login js/show password.js"></script>
+    <script src="/Login js/login.js"></script>
+  </body>
+</html>
